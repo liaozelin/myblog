@@ -1,0 +1,91 @@
+<div id="wrapper">
+  <div class="overlay"></div>
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+      <li class="sidebar-brand">
+        <a routerLink="#"> LiaoZelin's Blog </a>
+      </li>
+      <li>
+        <a routerLink="#"><i class="fa fa-fw fa-home"></i> wait for implementing</a>
+      </li>
+<!--       <li>
+        <a routerLink="#"><i class="fa fa-fw fa-folder"></i> Page one</a>
+      </li>
+      <li>
+        <a routerLink="#"><i class="fa fa-fw fa-file-o"></i> Second page</a>
+      </li>
+      <li>
+        <a routerLink="#"><i class="fa fa-fw fa-cog"></i> Third page</a>
+      </li>
+      <li class="dropdown">
+        <a routerLink="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li class="dropdown-header">Dropdown heading</li>
+          <li><a class="dropdown-a-tags" routerLink="#">Action</a></li>
+          <li><a class="dropdown-a-tags" routerLink="#">Another action</a></li>
+          <li><a class="dropdown-a-tags" routerLink="#">Something else here</a></li>
+          <li><a class="dropdown-a-tags" routerLink="#">Separated link</a></li>
+          <li><a class="dropdown-a-tags" routerLink="#">One more separated link</a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+      </li>
+      <li>
+        <a routerLink="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+      </li>
+      <li>
+        <a routerLink="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+      </li> -->
+    </ul>
+  </nav>
+  <!-- /#sidebar-wrapper -->
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+      <div class="button-inner">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </div>
+    </button>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-me" role="navigation">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">My Blog</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a routerLink="/">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="my-jumbotron"></div>
+
+  <router-outlet></router-outlet>
+
+  <footer class="footer">
+    <div class="container">
+    <div class="row row-centered">
+      <span class="text-muted pull-center">
+        Click <a class="" routerLink="/signin">here</a> to sign in as administrator.
+
+      </span>
+    </div>
+    </div>
+  </footer>
+
+</div>

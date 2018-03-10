@@ -1,0 +1,44 @@
+<div class="title">
+  <span>{{title}}</span>
+</div>
+<!-- <div class="container"> -->
+  <!-- <div class="row"> -->
+    <div class="content">
+      <form role="form">
+        <div class="col-sm-12 text-center">
+          <h2>Write a new post</h2>
+        </div>
+        <div class="col-sm-9">
+          <div class="form-group">
+            <label for="title">标题</label>
+            <input id="title" class="form-control" type="text" name="title" required="" placeholder="请输入标题" [(ngModel)]="form.title">
+          </div>
+          <div class="form-group">
+            <label for="tags">标签</label>
+            <input id="tags" class="form-control" type="text" name="tags" required="" placeholder="请输入标签" [(ngModel)]="form.tags">
+          </div>
+          <div class="form-group">
+            <label for="summary">摘要</label>
+            <textarea id="summary" class="form-control" type="text" name="summary" required="" placeholder="默认截取文章前50字" [(ngModel)]="form.summary"></textarea>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group col-sm-8">
+            <label for="category">分类</label>
+            <select id="category" class="form-control" name="category" [(ngModel)]="form.category">
+              <option value="none">未分类</option>
+              <option value="js">javascript</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <label for="content">正文</label>
+          <textarea id="content" class="form-control" name="content" required="" rows="12" required="" [(ngModel)]="form.content"></textarea>
+        </div>
+        <div class="col-sm-12 btns">
+          <button id="submit" class="btn btn-default" type="" (click)="goBack()">Back</button>
+        </div>
+      </form>
+    </div>
+  <!-- </div> -->
+<!-- </div> -->

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+      <!-- posts' list -->
+        <div class="text-center" *ngIf="posts.length === 0"><h3>No post at all!</h3></div>
+          <div class="blog-post" *ngFor="let post of posts">
+            <h2 class="post-title">
+              <a class="" routerLink="/post/{{post.id}}"><strong>{{post.title}}</strong></a>
+            </h2>
+            <div class="post-summary"><h3>{{post.summary}}</h3></div>
+            <div class="post-info">
+              Posted on {{post.updateTime | date}}
+              <a class="post-button pull-right" routerLink="/post/{{post.id}}">Read More</a>
+            </div>
+
+            <div class="hr-line-dashed"></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

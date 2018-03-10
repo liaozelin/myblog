@@ -1,0 +1,50 @@
+<aside class="main-sidebar">
+  <section class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="sidebar-head">
+        <div id="sidebar-head-pic"><img src="./app/admin_module/00.jpg"></div>
+        <span id="sidebar-head-note">admin</span>
+      </li>
+      <li class="header">MAIN NAVIGATION</li>
+      <li>
+        <a routerLink="/">
+          <i class="fa fa-th"></i> <span>返回主页</span>
+        </a>
+      </li>
+      <li class="treeview">
+        <a routerLink="#">
+          <i class="fa fa-dashboard"></i> <span>文章管理</span> <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/admin/managerPost"><i class="fa fa-circle-o"></i> 概览</a></li>
+          <li><a routerLink="/admin/addPost"><i class="fa fa-circle-o"></i> 添加文章</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a routerLink="#">
+          <i class="fa fa-pie-chart"></i>
+          <span>分类管理</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="#"><i class="fa fa-circle-o"></i> wait for implementing </a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a routerLink="#">
+          <i class="fa fa-laptop"></i>
+          <span>标签管理</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="#"><i class="fa fa-circle-o"></i> wait for implementing</a></li>
+        </ul>
+      </li>
+      <li class="header">LABELS</li>
+      <li><a routerLink="#" (click)="quit()"><i class="fa fa-circle-o text-red"></i> <span>退出后台</span></a></li>
+    </ul>
+  </section>
+</aside>
+<div class="page">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,23 @@
+.page
+{
+    min-height: 100%;
+    margin: 0 0 0 230px;
+
+    background-color: #eee;
+}
+
+#sidebar-head-pic {
+    padding: 40px 0 20px 66px;
+}
+
+#sidebar-head-pic img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#sidebar-head-note {
+    font-size: 17px;
+    color: #fff;
+    padding: 10px 0 20px 80px;
+}

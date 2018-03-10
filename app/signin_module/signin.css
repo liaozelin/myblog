@@ -1,0 +1,84 @@
+.form-signin
+{
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    font-size: 16px;
+
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type='email']
+{
+    margin-bottom: -1px;
+
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type='password']
+{
+    margin-bottom: 10px;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.my-form-signin-heading
+{
+    margin-bottom: 25px!important;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.my-container
+{
+    background-image: url('./app/signin_module/pic7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+input
+{
+    opacity: .7;
+}
+.signin-btn
+{
+    font-size: 18px;
+
+    min-height: 40px;
+}
+.my-signin-body
+{
+    min-width: 350px;
+    min-height: 300px;
+    margin-top: 50%;
+
+    border-radius: 1%;
+}

@@ -1,0 +1,238 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+.my-float-clear
+{
+    clear: both;
+}
+
+.my-body
+{
+    background-color: white;
+}
+
+.my-block
+{
+    margin-top: 10px;
+
+    border-width: 0 0 1px 0;
+    border-style: dashed;
+    border-color: #aaa;
+}
+
+.my-offset
+{
+    margin-left: 20px;
+}
+
+.show
+{
+    opacity: 1;
+}
+
+.hidden
+{
+    opacity: 0;
+}
+
+.content-area
+{
+    margin: 20px 0 40px 0;
+}
+
+.list-wrap
+{
+    min-height: 64px;
+    margin: 30px 6px 0;
+    padding: 0 20px 20px;
+
+    border-width: 1px 0;
+    border-style: solid solid none;
+    border-color: #e7eaec;
+    background: #fff;
+}
+
+.top-bar
+{
+    border-bottom: 1px solid #e7eaec;
+}
+/*分割线*/
+.hr-line-dashed
+{
+    height: 1px;
+    margin: 20px 0;
+
+    color: #fff;
+    border-top: 1px dashed #e7eaec;
+    background-color: #fff;
+}
+
+/*文本居中*/
+.text-center
+{
+    text-align: center;
+}
+
+.my-jumbotron
+{
+    position: relative;
+    top: -70px;
+
+    min-height: 380px;
+
+    background-image: url('../pics/pic2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-me
+{
+    border: none;
+    background: rgba(0,0,0,.1);
+}
+
+.navbar-static-side
+{
+    position: absolute;
+    z-index: 2001;
+
+    width: 220px;
+}
+
+.post-title
+{
+    margin: 20px 0;
+}
+
+.post-title a
+{
+    color: #000;
+}
+
+.post-summary
+{
+    font-size: 30px;
+}
+
+.post-info
+{
+    font-style: italic;
+
+    margin: 5px 0;
+
+    color: #776f6f;
+}
+
+/*--------------------------------------------*/
+/*修改了bootstrap的内容*/
+.navbar-brand,
+.navbar-nav a
+{
+    border: none;
+    background: rgba(0,0,0,.1);
+    background-color: transparent;
+}
+
+/*--------------------------------------------*/
+/*滚回顶部选项*/
+.fixed-tool
+{
+    position: fixed;
+    z-index: 2;
+    right: 60px;
+    bottom: 0;
+}
+
+.fixed-tool-item
+{
+    width: 40px;
+    height: 40px;
+    padding: 10px 14px;
+
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.fixed-tool-item:hover
+{
+    background-color: #1ab394;
+}
+
+.fixed-tool-item-hidden
+{
+    display: none;
+}
+
+.fixed-tool-item-show
+{
+    position: fixed;
+    top: auto;
+    bottom: 70px;
+
+    display: block;
+}
+
+/*加载动画*/
+.spinner
+{
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+    margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+            animation: bounce 2.0s infinite ease-in-out;
+
+    opacity: .6;
+    border-radius: 50%;
+    background-color: #67cf22;
+}
+
+.double-bounce2
+{
+    -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce
+{
+    0%,
+    100%
+    {
+        -webkit-transform: scale(.0);
+    }
+    50%
+    {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes bounce
+{
+    0%,
+    100%
+    {
+        -webkit-transform: scale(.0);
+                transform: scale(.0);
+    } 50%
+    {
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+    }
+}
