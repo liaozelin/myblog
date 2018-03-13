@@ -7,7 +7,7 @@
           <h2>{{post.title}}</h2>
         </div>
         <hr />
-        <div class="content-area">{{post.content}}</div>
+        <div class="content-area" [innerHTML]=post.content></div>
       </div>
     </div>
     <div class="col-sm-12">

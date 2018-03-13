@@ -1,5 +1,7 @@
 "use strict";
 
+const marked = require('marked');
+
 const db = require('../model');
 const Post = db.post;
 
@@ -65,6 +67,7 @@ var getPost = async (ctx, next) => {
         if (err) return console.log("find post failed...");
 
         if (data != null) {
+            data.content = marked(data.content);
             ctx.response.type = jsonType;
             ctx.response.body = {
                 post: data
